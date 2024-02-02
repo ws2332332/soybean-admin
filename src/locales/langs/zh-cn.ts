@@ -126,6 +126,7 @@ const local: App.I18n.Schema = {
     home: '首页',
     'user-center': '个人中心',
     about: '关于',
+    'demo-1': '案例一',
     function: '系统功能',
     function_tab: '标签页',
     'function_multi-tab': '多标签页',
