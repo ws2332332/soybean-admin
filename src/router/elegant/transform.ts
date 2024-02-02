@@ -151,6 +151,7 @@ const routeMap: RouteMap = {
   "404": "/404",
   "500": "/500",
   "about": "/about",
+  "demo-02": "/demo-02",
   "demo-1": "/demo-1",
   "function": "/function",
   "function_multi-tab": "/function/multi-tab",
