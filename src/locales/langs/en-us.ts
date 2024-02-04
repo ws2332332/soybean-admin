@@ -128,6 +128,7 @@ const local: App.I18n.Schema = {
     about: 'About',
     'demo-1': 'demo-1',
     'demo-02': 'demo-02',
+    'demo-03': 'demo-03',
     function: 'System Function',
     function_tab: 'Tab',
     'function_multi-tab': 'Multi Tab',
