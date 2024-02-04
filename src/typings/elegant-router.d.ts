@@ -27,6 +27,7 @@ declare module "@elegant-router/types" {
     "about": "/about";
     "demo-02": "/demo-02";
     "demo-03": "/demo-03";
+    "demo-04": "/demo-04";
     "demo-1": "/demo-1";
     "function": "/function";
     "function_multi-tab": "/function/multi-tab";
@@ -86,6 +87,7 @@ declare module "@elegant-router/types" {
     | "about"
     | "demo-02"
     | "demo-03"
+    | "demo-04"
     | "demo-1"
     | "function"
     | "home"
@@ -117,6 +119,7 @@ declare module "@elegant-router/types" {
     | "about"
     | "demo-02"
     | "demo-03"
+    | "demo-04"
     | "demo-1"
     | "function_multi-tab"
     | "function_tab"

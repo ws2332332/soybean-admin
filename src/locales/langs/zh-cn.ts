@@ -129,6 +129,7 @@ const local: App.I18n.Schema = {
     'demo-1': '案例一',
     'demo-02': '案例二',
     'demo-03': '案例三',
+    'demo-04': '案例四',
     function: '系统功能',
     function_tab: '标签页',
     'function_multi-tab': '多标签页',
