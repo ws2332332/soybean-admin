@@ -75,6 +75,15 @@ export const generatedRoutes: GeneratedRoute[] = [
     }
   },
   {
+    name: 'demo-05',
+    path: '/demo-05',
+    component: 'layout.base$view.demo-05',
+    meta: {
+      title: 'demo-05',
+      i18nKey: 'route.demo-05'
+    }
+  },
+  {
     name: 'demo-1',
     path: '/demo-1',
     component: 'layout.base$view.demo-1',
