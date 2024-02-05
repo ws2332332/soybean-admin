@@ -65,6 +65,9 @@ importers:
       vue-router:
         specifier: 4.2.5
         version: 4.2.5(vue@3.4.15)
+      xllin-vue-resize:
+        specifier: ^1.0.0
+        version: 1.0.0
     devDependencies:
       '@elegant-router/vue':
         specifier: 0.3.4
@@ -8911,6 +8914,10 @@ packages:
     resolution: {integrity: sha512-GCPAHLvrIH13+c0SuacwvRYj2SxJXQ4kaVTT5xgL3kPrz56XxkF21IGhjSE1+W0aw7gpBWRGXLCPnPby6lSpmQ==}
     engines: {node: '>=12'}
     dev: true
+
+  /xllin-vue-resize@1.0.0:
+    resolution: {integrity: sha512-tyyxKgSs5T9NdZwfX5qtRELJ0u72aB4R2ulU0QYI26bFxG17MEt6M6zbz/rrgmuU1ZZtCMvwZy6d/lTJSp4evQ==, tarball: https://registry.npmjs.org/xllin-vue-resize/-/xllin-vue-resize-1.0.0.tgz}
+    dev: false
 
   /xml-name-validator@4.0.0:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
