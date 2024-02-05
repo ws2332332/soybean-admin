@@ -4,13 +4,13 @@ import type { Directive } from 'vue';
 // global 懒加载 eager：静态加载
 const imgList: Record<string, { default: string }> = import.meta.glob('@/assets/demo-05/*.*', { eager: true });
 const urlArr: string[] = Object.values(imgList)?.map(item => item.default);
-console.log(urlArr, 'list');
 
 // 使用自定义指令做图片懒加载
 const vLazy: Directive<HTMLImageElement, string> = async (el, bingding) => {
   const def = await import('../../assets/loaddata.gif');
   el.src = def.default;
   const observer = new IntersectionObserver(entry => {
+    console.log(entry[0], 'entry[0]');
     if (entry[0].intersectionRatio > 0) {
       setTimeout(() => {
         el.src = bingding.value;
