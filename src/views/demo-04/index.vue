@@ -54,13 +54,15 @@ const vCanUse: Directive<HTMLElement, string> = (el, bingding) => {
 </script>
 
 <template>
-  <div class="wraps">
-    <NCard v-local-value:localValue="cardInfo" title="自定义指令"></NCard>
-  </div>
-  <div class="mt-[20px]">
-    <NButton v-can-use="'shop:creat'" type="primary">创建</NButton>
-    <NButton v-can-use="'shop:edit'" type="default">编辑</NButton>
-    <NButton v-can-use="'shop:delete'" type="error">删除</NButton>
+  <div>
+    <div class="wraps">
+      <NCard v-local-value:localValue="cardInfo" title="自定义指令"></NCard>
+    </div>
+    <div class="mt-[20px]">
+      <NButton v-can-use="'shop:creat'" type="primary">创建</NButton>
+      <NButton v-can-use="'shop:edit'" type="default">编辑</NButton>
+      <NButton v-can-use="'shop:delete'" type="error">删除</NButton>
+    </div>
   </div>
 </template>
 
