@@ -17,6 +17,13 @@ async function setupApp() {
 
   const app = createApp(App);
 
+  app.config.globalProperties.$env = 'test';
+  app.config.globalProperties.$filters = {
+    format<T>(str: T) {
+      return `hh-${str}`;
+    }
+  };
+
   setupStore(app);
 
   await setupRouter(app);

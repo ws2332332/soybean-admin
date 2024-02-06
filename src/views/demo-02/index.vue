@@ -12,6 +12,9 @@ const getStr = (str: string) => {
   val.value = str;
 };
 
+const app = getCurrentInstance();
+console.log(app?.proxy?.$filters);
+
 // ref使用
 const testRef = ref<InstanceType<typeof ChildA>>();
 </script>
@@ -20,7 +23,8 @@ const testRef = ref<InstanceType<typeof ChildA>>();
   <div class="wraps">
     <ChildA ref="testRef" @on-click="getNum" @on-test="getStr" />
     <NCard title="card1" class="mt-20px">{{ val ?? testRef?.default }}</NCard>
-    <NButton type="primary" class="mt-20px" @click="testRef?.open">调用子组价的方法</NButton>
+    <NButton type="primary" class="mt-20px" @click="testRef?.open">调用子组件的方法</NButton>
+    <div>全局变量： {{ $env }}</div>
   </div>
 </template>
 
