@@ -14,6 +14,7 @@ declare module 'vue' {
     DarkModeContainer: typeof import('./../components/common/dark-mode-container.vue')['default']
     ExceptionBase: typeof import('./../components/common/exception-base.vue')['default']
     FullScreen: typeof import('./../components/common/full-screen.vue')['default']
+    GlobalLoading: typeof import('./../components/_global/global-loading.vue')['default']
     IconAntDesignReloadOutlined: typeof import('~icons/ant-design/reload-outlined')['default']
     IconGridiconsFullscreen: typeof import('~icons/gridicons/fullscreen')['default']
     IconGridiconsFullscreenExit: typeof import('~icons/gridicons/fullscreen-exit')['default']
