@@ -38,7 +38,7 @@ const setStorage = (key: string, value: any) => {
 // 本地持久化获取pinia
 const getStore = (key: string) => {
   const value = localStorage.getItem(key);
-  return value ? JSON.parse(value) : null;
+  return value ? JSON.parse(value) : {};
 };
 
 // 本地持久化pinia
@@ -47,7 +47,9 @@ export function localPinia(options: Options) {
     const { store } = context;
     const localData = getStore(`${options?.key ?? defaultKey}-${store.$id}`);
     store.$subscribe((mutation, state) => {
-      setStorage(`${options?.key ?? defaultKey}-${store.$id}`, toRaw(state));
+      if (JSON.stringify(localData) !== '{}') {
+        setStorage(`${options?.key ?? defaultKey}-${store.$id}`, toRaw(state));
+      }
       console.log(mutation, state);
     });
     return {
